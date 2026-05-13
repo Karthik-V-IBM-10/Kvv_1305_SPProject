@@ -8,7 +8,102 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: SIQAJDBCAdapterTests
+  version: "1.0"
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
+- name: WmSalesforceRESTProvider
+  wpmServer: https://packages.webmethods.io
+services:
+- serviceName: project.kvv_1305_sp.WmSalesforceRESTProvider.com_webmethods_cloudstreams_salesforce_rest_v60.connections:rest1305
+  packages:
+  - name: Kvv_1305_SPProject
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.18
+configurationVariables:
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.oauth_v20.authenticationServerUrl
+  : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.oauth.accessToken
+  : "{AES}7vZbWzyLRu2KZ5z191Zgwdr7/M+VfooozU57fC//O0ikGXDPP9dcYFAP6hjx2hgHQwlw6t+LVXL+gQZY/wWbUSK56iGb8pWddJ7MN1MVFstd27Uq2ZW9gko3I9DG/1XsjyscsfT0k2Iic2CULRlbRWmK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.oauth_v20.authorizationHeaderPrefix
+  : Bearer
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.retryCount
+  : "4"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.oauth_v20.accessTokenRefreshURL
+  : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.oauth_v20.scope
+  : offline_access api refresh_token
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.oauth_v20.authorizationServerUrl
+  : https://login.salesforce.com/services/oauth2/authorize
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.readTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.idleTimeout
+  : "-1"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.timeoutType
+  : auto
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.startupRetryCount
+  : "0"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.oauth_v20.refreshToken
+  : "{AES}EQHy/XAuhQ5jza5ZKR2OX/0iGys3kemMqXPsysWcIpFuJ9I8HHXklaBzpiiM9BsY3utrII39DrfG4cjUvqh954bfUf9dTB0T69TmZU3Rvrf2IFXDtwVYN6r7jeibWm8D"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.oauth_v20.accessTokenRefreshURLRequest
+  : URL Query String
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.providerUrl
+  : https://orgfarm-560b08beca-dev-ed.develop.my.salesforce.com
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.poolable
+  : "true"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.oauth_v20.authorizationHeaderInTokenRefresh
+  : "false"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.oauth_v20.refreshAccessToken
+  : "true"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.connectTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cx.grant_type
+  : refresh_token
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.oauth.consumerId
+  : 3MVG97L7PWbPq6Uy4GuKfCBdlZ2Ki3zBo1ozuvhhr4kaC8CAOPM7AlvJWTYLSJ78HYfNiPpxsko6oHNlk0DNc
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.retryIfRequestSentOk
+  : "true"
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.oauth.consumerSecret
+  : "{AES}GgpQnyJJ1uL6OsF0eMPiqoqX3ylfQbZjKvciNaa6CHatTyEt6cAu1xYN8BAkAutwj72/uOKYBgByAqSlgRBNqWmK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..kvv_1305_sp..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:rest1305.cn.sockBuffSize
+  : "8192"
