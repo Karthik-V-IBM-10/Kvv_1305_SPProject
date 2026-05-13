@@ -1,0 +1,9 @@
+version: "1.0"
+projectName: Kvv_1305_SPProject
+runtimes:
+- runtimeAlias: kvv_1305_SP
+  assets:
+  - name: fld_114244697_stage00.projects.fl767495a49f9b4f0383f5003de94ed420.integrations:tppfcs
+    type: flow
+    stepId: /0
+    reference: fld_114244697_stage00.projects.fl767495a49f9b4f0383f5003de94ed420.WmPackageServiceProvider.SIQAJDBCAdapterTests.adapterServices:getData
